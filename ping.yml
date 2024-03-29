@@ -1,0 +1,7 @@
+---
+- name: Ping hosts
+  hosts: all  # This targets all hosts defined in your inventory
+
+  tasks:
+    - name: Ping each host
+      ping:
