@@ -1,11 +1,7 @@
 ---
 - name: Ping hosts
   hosts: all  # This targets all hosts defined in your inventory
-  gather_facts: no  # We don't need facts gathering for this simple task
 
   tasks:
     - name: Ping each host
       ping:
-
-  vars:
-    ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
